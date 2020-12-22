@@ -43,14 +43,21 @@ main h3{
     font-weight: normal;
 }
 
-nav{
+/* nav{
     grid-area: nav;
     width: 100%;
     height: 100px;
     display: inline-block;
     text-align: center;
-
-}
+} */
+nav {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100vh;
+   }
 
 
 nav > ul > li > a{
