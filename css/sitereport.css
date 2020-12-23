@@ -17,6 +17,11 @@ main h1{
     color: aquamarine;
 }
 
+main{ 
+    grid-area: main;
+    color: cornsilk;
+    
+}
 
 nav{
     grid-area: nav;
