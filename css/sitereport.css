@@ -13,6 +13,10 @@ body{
                           ". main main ."
                           ". footer footer .";
 }
+main h1{
+    color: aquamarine;
+}
+
 
 nav{
     grid-area: nav;
