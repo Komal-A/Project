@@ -19,10 +19,13 @@ main h1{
 
 main{ 
     grid-area: main;
-    color: cornsilk;
-    
+    color: cornsilk;   
 }
 
+.images > img{
+    height: 200px;
+    width: 300px;
+}
 nav{
     grid-area: nav;
     width: 100%;
