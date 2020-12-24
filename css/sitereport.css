@@ -10,7 +10,7 @@ body{
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: auto;
     grid-template-areas:  "header header nav nav" 
-                          "main main main main"
+                          "main main main ."
                           ". footer footer .";
 }
 main h1{
@@ -19,6 +19,17 @@ main h1{
 }
 .Intro{
     list-style-type: none;
+    padding-left: 18em;
+    display: block;
+    background-color: cadetblue;
+}
+main h2{
+    padding: 1.5em 10em;
+    display: inline;
+    color: cadetblue;
+}
+
+.Para{
     padding-left: 18em;
 }
 
