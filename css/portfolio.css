@@ -73,10 +73,11 @@ div h1{
   width: 100px;
   height: 100px;
   display: inline;
-  /* text-align: center; */
+  text-align: center;
   background-color: rgba(27, 233, 205, 0.938);
   animation-name: example;
   animation-duration: 6s;
+  padding-left: 5em;
 }
 
 @keyframes example {
