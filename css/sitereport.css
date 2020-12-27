@@ -14,7 +14,7 @@ body{
                           ". footer footer .";
 }
 main h1{
-    color: white;
+    color: rgb(34, 236, 112);
     padding-left: 7em;
 }
 
@@ -32,7 +32,6 @@ div li{
 
 .Para{
     padding-left: 18em;
-    /* text-align: center; */
     display: inline-block;
     
 }
@@ -40,6 +39,43 @@ div li{
 div > p{
     border: 2px solid aquamarine;
     padding: 5px;
+}
+
+h3{
+    display: inline;
+    /* padding-left: 20px; */
+    margin-left: 12em;
+    border: 2px solid aquamarine;
+    background-color: turquoise;
+    color: blue;
+}
+
+.Grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas: "column1 column2";
+
+}
+.column1 {
+    grid-area: column1;
+    padding-left: 12em;
+}
+.column2{ 
+    grid-area: column2;
+}
+.column1 img{
+    height: 200px;
+    width: 300px;
+}
+
+.column2 img{
+    height: 200px;
+    width: 300px;
+}
+.text{
+    margin-left: 12em;
+    display: inline-block;
 }
 
 main{ 
@@ -50,6 +86,7 @@ main{
 .images > img{
     height: 200px;
     width: 300px;
+    padding-left: 20em;
 
 }
 nav{
