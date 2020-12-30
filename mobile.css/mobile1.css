@@ -50,24 +50,31 @@ main h3{
     display: inline-block;
     text-align: center;
 } */
-nav {
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 50%;
-    width: 50%;
-    height: 100vh;
-   }
+/* //this code is from the exercise 1 Topic 4// */
 
+nav{
+	background-color: #007FBF;
+	grid-area: nav;
+	display: block;
+	position: fixed;
+ 	top: 0;
+ 	left: 50%;
+ 	width: 50%;
+ 	height: 100vh;
+}
 
-nav > ul > li > a{
+nav ul{
+    background-color: black;
+}
+
+/* nav > ul > li > a{
     padding: 25px;
 
 }
 
 nav ul li{
     list-style-type: none;
-}
+} */
 
 .shownav{
            text-decoration: none;
