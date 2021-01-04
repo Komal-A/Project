@@ -7,11 +7,11 @@ body{
     margin: 0em;
     padding: 0em;
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: 50% 50%;
     grid-template-rows: auto;
-    grid-template-areas:  "header header nav nav" 
-                          "main main main aside"
-                          ". footer footer .";
+    grid-template-areas:  "header nav" 
+                          "main aside"
+                          "footer footer";
 }
 main h1{
     color: white;
@@ -32,7 +32,6 @@ div li{
 
 .Para{
     padding-left: 18em;
-    /* text-align: center; */
     display: inline-block;
     
 }
@@ -40,16 +39,23 @@ div li{
 div > p{
     border: 2px solid aquamarine;
     padding: 5px;
+    margin-top: auto;
 }
 
 main{ 
     grid-area: main;
     color: cornsilk;   
 }
+main h3{
+    color: white;
+    padding-left: 18em;
+}
+ 
 
 .images > img{
     height: 200px;
     width: 300px;
+    float: left;
 
 }
 nav{
@@ -87,13 +93,18 @@ aside{
     grid-area: aside;
     color: cornsilk;
 }
+
+
 aside img{
     height: 200px;
     width: 300px;
 }
 aside h1{
     color: white;
+    padding-left: 7em;
 }
+
+
 
 
 header{
