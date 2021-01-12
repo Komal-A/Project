@@ -1,31 +1,20 @@
-.buttons{
-    text-align: center;
-}
-
 body{
     font-family: 'Source Sans Pro', sans-serif;
     background-image: url("../images/4K-Tech-HD-Background.jpg");
     background-color: black;
     width: 100%;
-    height: 1000px;
     margin: 0em;
     padding: 0em;
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: 5% 45% 45% 5%;
     grid-template-rows: auto;
     grid-template-areas:  "header header nav nav" 
                           ". main main ."
                           "footer footer footer footer";
 }
 
-
-nav > ul > li > a{
-    padding: 25px;
-
-}
-
-nav ul li{
-    list-style-type: none;
+.buttons{
+    text-align: center;
 }
 
 nav{
@@ -36,13 +25,81 @@ nav{
     text-align: center;
 }
 
-.shownav{
-           text-decoration: none;
-           color: white;
-           display: inline-block;
-           list-style: none;
+nav ul{
+    list-style-type: none;
+    display: grid;
+    padding-left: 0px;
 }
 
+nav > ul > li > a{
+    padding: 5px 15px;
+    margin: 20px 10px;
+}
+
+nav ul li{
+    text-decoration: none;
+    display: inline-block;
+    list-style: none;
+}
+
+nav ul li a:hover{
+    color: black;
+    font-weight: bold;
+    padding: 5px 15px;
+    background-color: #0bf5ba;
+    margin: 20px 10px;
+    border: 4px solid white;
+    border-radius: 10px;
+}
+
+h2, p{
+    padding: 0em;
+    margin: 0em;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+.active{
+    font-weight: bold;
+    padding: 5px 15px;
+    text-decoration: none;
+    background-color: #0bf5ba;
+    margin: 20px 10px;
+    color: black;
+    border: 4px solid white;
+    border-radius: 10px;
+}
+
+#check{
+    display: none;
+}
+
+.shownav{
+    font-weight: bold;
+    padding: 5px 15px;
+    margin: 20px 10px;
+    text-decoration: none;
+    display: inline-block;
+    list-style: none;
+    color: white;
+}
+
+.myform{
+    padding: 0px 100px 50px 100px;
+}
+
+.myform p{
+    font-size: 20px;
+    padding: 5px 0px 5px 0px;
+}
+
+.myform h2{
+    color: white;
+    padding-bottom: 20px;
+}
 
 header{
     font-size: 20px;
@@ -61,10 +118,8 @@ main{
     color: skyblue;
     grid-area: main;
     display: block;
-    width: 75%;
-    height: 600px;
-    padding: 1em;
-    margin-top: 50px;
+    width: 100%;
+    /*margin-top: 50px;*/
 }
 
 main h1{
@@ -75,25 +130,13 @@ main h1{
 main h3{
     font-weight: normal;
 }
+
 #myinput{
     background-color: lightgray;
     color: rgb(56, 41, 75);
     font-weight: bold;
     font-style: italic;
     
-}
-
-#myinput1{
-    background-color: lightgray;
-    color: rgb(56, 41, 75);
-    font-weight: bold;
-    font-style: italic;
-}
-#myinput2{
-    background-color: lightgray;
-    color: rgb(56, 41, 75);
-    font-weight: bold;
-    font-style: italic;
 }
 
 footer{
@@ -104,16 +147,11 @@ footer{
     border: 3px solid rgb(11, 245, 186);
     background-color: black;
     padding: 5px;
-
 }
 
-
-a:hover{
-    color: blue;
-}
 section{
     padding: 0px;
-    margin-top: 60px;
+    margin-top: 30px;
 }
 
 form {
@@ -122,7 +160,8 @@ form {
     grid-template-columns: 50% 50%;
     align-items: center;
     grid-gap: 0.5em;
-    }
+}
+
 .submit {
     grid-column: 2;
     background-color: cornflowerblue;
