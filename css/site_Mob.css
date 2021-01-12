@@ -9,9 +9,11 @@ body{
     display: grid;
     grid-template-columns: 5% 45% 45% 5%;
     grid-template-rows: auto;
-    grid-template-areas:  "header header nav nav" 
+    grid-template-areas:  "header header header header"
+                          ". nav nav ."
                           ". page page ."
-                          ". main aside ."
+                          ". main main ."
+                          ". aside aside ."
                           "footer footer footer footer";
 }
 
@@ -33,26 +35,6 @@ body{
     padding-bottom: 40px;
 }
 
-.page-heading {
-    color: black;
-    width: 150px;
-    display: inline-block;
-    background-color: rgba(27, 233, 205, 0.938);
-    animation-name: example;
-    animation-duration: 6s;
-    padding: 5px 40px;
-    margin: 20px 0px 25px 0px;
-}
-
-@keyframes example {
-    from {
-        background-color: rgba(0, 183, 255, 0.219);
-    }
-    to {
-        background-color: rgb(0, 255, 255);
-    }
-}
-
 main h1{
     color: white;
     padding-left: 0em;
@@ -68,7 +50,6 @@ main .page-labels, aside .page-labels{
 main .section h3, main .section p, aside .section h3, aside .section p{
     padding: 0.3em 0em 0.5em 1.1em;
     color: black;
-    /*text-align: left;*/
 }
 
 h4, p, li, h2, h3{
@@ -131,73 +112,88 @@ main{
     color: cornsilk;
     text-align: center;
     background-color: white;
-    margin-right: 5px;
+    margin-bottom: 40px;
 }
 
 nav{
     grid-area: nav;
-    width: 100%;
-    height: 100px;
-    display: inline-block;
-    text-align: center;
 }
 
 nav ul{
-    list-style-type: none;
-    display: grid;
-    padding-left: 0px;
-}
-
-nav > ul > li > a{
-    padding: 5px 15px;
-    margin: 20px 10px;
-}
-
-nav ul li{
-    text-decoration: none;
-    display: inline-block;
-    list-style: none;
-}
-
-nav ul li a:hover{
-    color: black;
-    font-weight: bold;
-    padding: 5px 15px;
-    background-color: #0bf5ba;
-    margin: 20px 10px;
-    border: 4px solid white;
-    border-radius: 10px;
-}
-
-.active{
-    font-weight: bold;
-    padding: 5px 15px;
-    text-decoration: none;
-    background-color: #0bf5ba;
-    margin: 20px 10px;
-    color: black;
-    border: 4px solid white;
-    border-radius: 10px;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    display: none;
+    line-height: 20px;
 }
 
 #check{
     display: none;
 }
 
-.shownav{
-    font-weight: bold;
-    padding: 5px 15px;
-    margin: 20px 10px;
+#check:checked ~ ul {
+    display: block;
+}
+
+#menu a.shownavs {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  padding: 0px;
+}
+
+#menu ul li a:hover {
+  background-color: #4169E1;
+  color: white;
+}
+
+#menu ul li a {
+  color: black;
+  padding: 14px 0px 14px 30px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bolder;
+  display: block;
+  background-color: #07f5ba;
+  border: 2px solid #080717;
+}
+
+.page-heading {
+    text-align: left;
+    color: skyblue;
+    padding: 20px 0px 20px 0px;
+}
+
+.shownavs:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 0.3em;
+    left: 0px;
+    border-top: 0.2em solid #fff;
+    display: block;
+}
+
+.shownavs {
     text-decoration: none;
+    color: white;
     display: inline-block;
     list-style: none;
-    color: white;
+    padding-right: 10px;
+    height: 0.8em;
+    width: 1.25em;
+    position: relative;
+    border-top: 0.2em solid white;
+    border-bottom: 0.2em solid white;
+    border-radius: 0.1em;
+    float: right;
+    cursor: pointer;
 }
 
 aside{
     grid-area: aside;
     color: cornsilk;
-    margin-left: 5px;
 }
 aside img{
     height: 200px;
@@ -228,8 +224,4 @@ footer{
     border: 3px solid rgb(11, 245, 186);
     background-color: black;
     padding: 5px;
-}
-
-a:hover{
-	color:blue;
 }
