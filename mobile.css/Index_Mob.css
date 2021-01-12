@@ -1,0 +1,286 @@
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    background-image: url("../images/4K-Tech-HD-Background.jpg");
+    width: 100%;
+    height: 800px;
+    margin: 0em;
+    padding: 0em;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas:  "header"
+                          "nav"  
+                          "main"
+                          "footer";
+    
+}
+
+header{
+    font-size: 10px;
+    display: block;
+    width: 100%;  
+    text-align: center;
+}
+header h1 a{
+    text-decoration: none;
+    color: rgb(11, 245, 186);
+    display: inline-block;
+}
+
+main{
+    color: skyblue;
+    grid-area: main;
+    display: block;
+    /* width: 75%; */
+    height: 600px;
+    padding: 1em;
+}
+
+main h1{
+    color: royalblue;
+}
+
+main h3{
+    font-weight: normal;
+}
+
+nav{
+    /* height: 100px; */
+    /* display: inline-block; */
+    padding-right: 10px;
+    padding-left: 10px;
+    grid-area: nav;
+    /* text-align: center; */
+}
+/* this code is from the exercise 1 Topic 4 */
+
+/* nav{
+	background-color: #007FBF;
+	display: block;
+	position: fixed;
+ 	top: 0;
+ 	left: 75%;
+ 	width: 35%;
+ 	height: 100px;
+} */
+
+#menu ul li a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+
+  #menu a.shownavs {
+    background: rgb(9, 84, 247);
+    display: block;
+    position: absolute;
+    right: 0;
+    /*top: 0;*/
+    padding: 0px;
+  }
+
+
+nav ul{
+    background-color: rgb(113, 156, 163);
+    margin: 0;
+    padding: 0;
+    display: none;
+    line-height: 20px;
+}
+
+#menu ul li a:hover {
+    background-color: #4169E1;
+    color: black;
+
+  }
+  
+
+
+nav > ul > li > a{
+    padding: 25px;
+   
+
+}
+
+nav ul > li{
+    list-style-type: none;
+}
+
+.shownav{
+           text-decoration: none;
+           color: white;
+           display: inline-block;
+           list-style: none;
+}
+
+
+
+a:hover{
+	color: blue;
+}
+
+footer{
+    text-align: center;
+    color: white;
+    margin-top: 10em;
+
+}
+
+
+/* @media (min-width: 40rem){
+    header h1{
+        font-size: 1em;
+
+    }
+} */
+/* Hamburger's Icon code */
+.shownavs{
+    padding-right: 10px;
+    color: white;
+    height: 0.8em;
+    width: 1.25em;
+    position: relative;
+    border-top: 0.2em solid white;
+    border-bottom: 0.2em solid white;
+    border-radius: 0.1em;
+    float: right;
+    cursor: pointer;
+    }
+
+#check{
+        display: none;
+    }
+#check:checked ~ ul {
+        display: block;
+    }
+
+    .shownav{
+        text-decoration: none;
+        color: white;
+        display: inline-block;
+        list-style: none;
+    }
+    
+    .shownavs:before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        top: 0.3em;
+        left: 0px;
+        border-top: 0.2em solid #fff;
+        display: block;
+    }
+    
+    
+    /*.hidenav{
+        height: 0.8em;
+        width: 1.25em;
+        position: relative;
+        display: block;
+        border-top: 0.2em solid white;
+        border-bottom: 0.2em solid white;
+        border-radius: 0.1em;
+    }*/
+    
+    /*.hidenav:before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        top: 0.3em;
+        left: 0px;
+        border-top: 0.2em solid #fff;
+        display: block;
+    }*/
+        
+    
+    /*#clicked .shownavs{
+        display: block;
+    }
+    
+    #clicked .hidenav{
+        display: none;
+    }
+    
+    #clicked:target .shownavs{
+        display: none;
+    }
+    #clicked:target .hidenav{
+        display: block;
+    }
+    
+    #clicked #menu{
+        display: block;
+    }
+    
+    #clicked:target #menu{
+        display: none;
+    }
+    */
+    
+    footer{
+        grid-area: footer;
+        text-align: center;
+        color: white;
+        height: 22px;
+        border: 3px solid rgb(11, 245, 186);
+        background-color: black;
+        padding: 5px;
+    
+    }
+/* .shownavs:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 0.3em;
+    left: 0px;
+    border-top: 0.2em solid #fff;
+    display: block;
+    }
+
+    .hidenav{
+        height: 0.8em;
+        width: 1.25em;
+        position: relative;
+        display: block;
+        border-top: 0.2em solid white;
+        border-bottom: 0.2em solid white;
+        border-radius: 0.1em;
+    
+        }
+    
+    .hidenav:before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        top: 0.3em;
+        left: 0px;
+        border-top: 0.2em solid #fff;
+        display: block;
+        }
+    
+
+#clicked .shownavs{
+    display: block;
+}
+
+#clicked .hidenav{
+    display: none;
+}
+
+#clicked:target .shownavs{
+    display: none;
+}
+#clicked:target .hidenav{
+    display: block;
+}
+
+#clicked #menu{
+    display: block;
+}
+
+#clicked:target #menu{
+    display: none;
+} */
