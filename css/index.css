@@ -14,6 +14,19 @@ body{
                           "footer footer footer footer";
 }
 
+#check{
+    display: none;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+.text-allign {
+  text-align: justify;
+  text-justify: inter-word;
+}
 
 header{
     font-size: 20px;
@@ -74,7 +87,6 @@ nav ul li{
            display: inline-block;
            list-style: none;
 }
-
 
 
 footer{

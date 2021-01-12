@@ -6,6 +6,8 @@ body{
     margin: 0em;
     padding: 0em;
     display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
     grid-template-areas:  "header"
                           "nav"  
                           "main"
@@ -69,8 +71,10 @@ nav{
     font-size: 17px;
     display: block;
   }
+
+
   #menu a.shownavs {
-    background: black;
+    background: rgb(9, 84, 247);
     display: block;
     position: absolute;
     right: 0;
@@ -80,7 +84,7 @@ nav{
 
 
 nav ul{
-    background-color: black;
+    background-color: rgb(113, 156, 163);
     margin: 0;
     padding: 0;
     display: none;
@@ -90,6 +94,7 @@ nav ul{
 #menu ul li a:hover {
     background-color: #4169E1;
     color: black;
+
   }
   
 
