@@ -1,55 +1,47 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
         <meta charset="UTF-8">
         <title>Home Page</title>
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital@1&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/index.css" media="screen and (min-width:1000px)">
+        <link rel="stylesheet" href="css/index.css" media="screen and (min-width:1001px)">
         <link rel="stylesheet" href="mobile.css/Index_Mob.css" media="screen and (max-width:1000px)">
+        <link rel="stylesheet" href="css/index.css" media="screen and (min-width:800px)">
+        <link rel="stylesheet" href="mobile.css/mobile1.css" media="screen and (max-width:800px)">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
 
-    <body id="clicked">
+    <body>
         <header>
             <h1>
                 <a href="index.html">Komal Shaheen 2020</a>
-               
             </h1>
-            
         </header>    
+        <nav id="menu">
+            <input type="checkbox" id="check">
+            <label for="check" class="shownavs"></label>
+            <ul id="myLinks">
+                <li>
+                    <a class="active" href="index.html">Home</a>
+                    <a class="shownav" href="portfolio.html">Portfolio</a>
+                    <a class="shownav" href="cv.html">CV</a>
+                    <a class="shownav" href="sitereport.html">Site Report</a>
+                    <a class="shownav" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
         
         <main>
-            <h1>Hello!</h1>
-            <h3><p>I am Komal, a student of B.Sc (Software Engineering) at The University of Northampton. The purpose of making this portfoilo is to introduce myself to you all and sharing my experiences about Web Development and other modules which I am learning at University. I consider myself ambitious, hardworking and committed. I enjoy doing Web Developing, programming and solving methamatical equations. To know more about me, please visit my website.</p></h3>
-            <img src="images/reverse-lesson-plan-empower-onlinestudents.jpg" alt="Image">
+            <div class="page">
+                <h2 class="page-heading">My Introduction</h2>
+            </div>
+            <h3>Hi! Welcome to my portfolio!</h3>
+                <p>My name is Komal Shaheen, I am student of B.Sc (Software Engineering) at The University of Northampton. The purpose of making this portfoilo is to introduce myself to you all and sharing my experiences about Web Development and other modules which I am learning at University. I consider myself ambitious, hardworking and committed. I enjoy doing Web Developing, programming and solving methamatical equations. To know more about me, please visit my website.</p>
+            <img class="responsive" src="images/reverse-lesson-plan-empower-onlinestudents.png" alt="Image">
         </main>
         
 
-        <nav id="menu">
-            <a href="#clicked" class="shownavs"></a>
-            <a href="#" class="hidenav"></a>
-            <ul>
-                
-                <li>
-                    <a class="shownav" href="index.html">Home</a>
-                
-                
-                    <a class="shownav" href="portfolio.html">Portfolio</a>
-                
-                 
-                    <a class="shownav" href="cv.html">CV</a>
-                
-                
-                    <a class="shownav" href="sitereport.html">Site Report</a>
-                
-                
-                    <a class="shownav" href="contact.html">Contact</a>
-                
-            </li>
-            </ul>    
-        </nav>   
-        <aside></aside>
 
         <footer>&copy; Komal Shaheen 2020</footer>
 

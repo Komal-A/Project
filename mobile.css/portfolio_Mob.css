@@ -1,3 +1,49 @@
+<<<<<<< HEAD
+body {
+=======
+<<<<<<< HEAD
+body{
+>>>>>>> master
+    font-family: 'Source Sans Pro', sans-serif;
+    background-image: url("../images/4K-Tech-HD-Background.jpg");
+    background-color: black;
+    width: 100%;
+    height: auto;
+    margin: 0em;
+    padding: 0em;
+    display: grid;
+    grid-template-columns: 5% 45% 45% 5%;
+    grid-template-rows: auto;
+    grid-template-areas: "header header header header"
+                         ". nav nav ."
+                         ". main main ."
+                         "footer footer footer footer";
+}
+
+nav{
+    grid-area: nav;
+}
+
+nav ul{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    display: none;
+    line-height: 20px;
+}
+
+<<<<<<< HEAD
+header{
+    grid-area: header;
+    font-size: 20px;
+    display: block;
+    width: 100%;  
+    text-align: center;
+}
+
+header h1 a{
+=======
+=======
 nav{
     height: 100px;
     display: inline-block;
@@ -35,34 +81,123 @@ nav ul > li{
 
 
 
+>>>>>>> Site-Report
 .shownav{
+>>>>>>> master
     text-decoration: none;
-    color: white;
+    color: rgb(11, 245, 186);
     display: inline-block;
-    list-style: none;
 }
 
-
-
-a:hover{
-color: blue;
+main {
+    color: skyblue;
+    grid-area: main;
+    display: inline;
+    width: 100%;
+    height: auto;
 }
 
+main .page {
+    text-align: center;
+    padding: 20px 0px;
+}
 
+main h3 a {
+    text-decoration: none;
+    color: rgb(40, 225, 250);
+}
 
+main img {
+    border: 5px solid rgb(0, 255, 255);
+    padding: 5px;
+    border-radius: 20px;
+}
 
-/* Hamburger's Icon code */
+h4 {
+    color: yellowgreen;
+}
 
-.shownavs{
-    height: 0.8em;
-    width: 1.25em;
-    position: relative;
+h2, h3, h4 {
+    margin: 0px;
+}
+
+footer {
+    grid-area: footer;
+    text-align: center;
+    color: white;
+    height: 22px;
+    border: 3px solid rgb(11, 245, 186);
+    background-color: black;
+    padding: 5px;
+}
+
+.column {
+    grid-area: column;
+    margin: 10px;
+}
+
+.column1 {
+    grid-area: column1;
+    margin: 10px;
+}
+
+.column2 {
+    grid-area: column2;
+    margin: 10px;
+}
+
+#check{
+    display: none;
+}
+
+#check:checked ~ ul {
     display: block;
-    border-top: 0.2em solid white;
-    border-bottom: 0.2em solid white;
-    border-radius: 0.1em;
+}
 
-    }
+#menu a.shownavs {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  padding: 0px;
+}
+
+#menu ul li a:hover {
+  background-color: #4169E1;
+  color: white;
+}
+
+#menu ul li a {
+  color: black;
+  padding: 14px 0px 14px 30px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bolder;
+  display: block;
+  background-color: #07f5ba;
+  border: 2px solid #080717;
+}
+
+#main-grid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: "column"
+                         "column1"
+                         "column2";
+    text-align: center;
+    grid-gap: 5px;
+    margin-top: 0px;
+}
+
+.page-heading {
+    text-align: left;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
 
 .shownavs:before{
     content: '';
@@ -72,49 +207,25 @@ color: blue;
     left: 0px;
     border-top: 0.2em solid #fff;
     display: block;
-    }
-
-    .hidenav{
-        height: 0.8em;
-        width: 1.25em;
-        position: relative;
-        display: block;
-        border-top: 0.2em solid white;
-        border-bottom: 0.2em solid white;
-        border-radius: 0.1em;
-    
-        }
-    
-    .hidenav:before{
-        content: '';
-        position: absolute;
-        width: 100%;
-        top: 0.3em;
-        left: 0px;
-        border-top: 0.2em solid #fff;
-        display: block;
-        }
-    
-
-#clicked .shownavs{
-    display: block;
 }
 
-#clicked .hidenav{
-    display: none;
+.shownavs {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    list-style: none;
+    padding-right: 10px;
+    height: 0.8em;
+    width: 1.25em;
+    position: relative;
+    border-top: 0.2em solid white;
+    border-bottom: 0.2em solid white;
+    border-radius: 0.1em;
+    float: right;
+    cursor: pointer;
 }
 
-#clicked:target .shownavs{
-    display: none;
-}
-#clicked:target .hidenav{
-    display: block;
-}
-
-#clicked #menu{
-    display: block;
-}
-
-#clicked:target #menu{
-    display: none;
+.text-allign {
+  text-align: justify;
+  text-justify: inter-word;
 }
