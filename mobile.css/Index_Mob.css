@@ -2,36 +2,24 @@ body{
     font-family: 'Source Sans Pro', sans-serif;
     background-image: url("../images/4K-Tech-HD-Background.jpg");
     width: 100%;
-<<<<<<< HEAD:mobile.css/Index_Mob.css
     height: auto;
     margin: 0em;
     padding: 0em;
     display: grid;
     grid-template-columns: 5% 45% 45% 5%;
-=======
-    height: 1000px;
-    margin: 0em;
-    padding: 0em;
-    /* display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
->>>>>>> mobile.css:mobile.css/mobile1.css
     grid-template-rows: auto;
     grid-template-areas:  "header header header header"
                           ". nav nav ."  
                           ". main main ."
-                          "footer footer footer footer"; */
+                          "footer footer footer footer";
 }
 
 header{
     grid-area: header;
     font-size: 20px;
     display: block;
-<<<<<<< HEAD:mobile.css/Index_Mob.css
-=======
-    /* grid-area: header; */
->>>>>>> mobile.css:mobile.css/mobile1.css
     width: 100%;  
-    /* text-align: center; */
+    text-align: center;
 }
 
 header h1 a{
@@ -42,7 +30,7 @@ header h1 a{
 
 main{
     color: skyblue;
-    /* grid-area: main; */
+    grid-area: main;
     display: block;
 }
 
@@ -50,15 +38,11 @@ main h1{
     color: royalblue;
 }
 
-<<<<<<< HEAD:mobile.css/Index_Mob.css
-nav{
-=======
 main h3{
     font-weight: normal;
 }
-/* This code didn't help to fix the nav */
-/* nav{
->>>>>>> mobile.css:mobile.css/mobile1.css
+
+nav{
     grid-area: nav;
 }
 
@@ -71,7 +55,7 @@ nav ul{
 }
 
 footer{
-    /* grid-area: footer; */
+    grid-area: footer;
     text-align: center;
     color: white;
     height: 22px;
