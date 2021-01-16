@@ -84,7 +84,7 @@ main{
 
 main h1{
     font-family: 'Source Sans Pro', sans-serif;
-    font-style: bold;
+    font-weight: bold;
     color: rgba(9, 237, 253, 0.877);
     font-size: 3em;
 }
