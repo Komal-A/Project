@@ -144,7 +144,7 @@ nav ul li a:hover{
 }
 
 .page-heading {
-    font-style: bold;
+    font-weight: bold;
     color: black;
     margin-top: 50px;
     text-align: center;
