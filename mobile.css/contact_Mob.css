@@ -145,7 +145,7 @@ main h3{
     font-weight: normal;
 }
 
-#myinput{
+#myinput, #myinput1, #textarea{
     background-color: lightgray;
     color: rgb(56, 41, 75);
     font-weight: bold;
