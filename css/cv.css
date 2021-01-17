@@ -189,3 +189,6 @@ nav ul li a:hover{
     list-style: none;
     color: white;
 }
+a:hover{
+	color:blue;
+}

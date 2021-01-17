@@ -1,3 +1,4 @@
+/* used this code for body layout */
 body{
     font-family: 'Source Sans Pro', sans-serif;
     background-image: url("../images/4K-Tech-HD-Background.jpg");
@@ -74,6 +75,7 @@ main .page {
     padding: 20px 0px;
 }
 
+/* used animation on heading assigned class name page-heading */
 .page-heading {
     font-style: bold;
     color: black;
@@ -97,6 +99,7 @@ main .page {
     }
 }
 
+/* this styling code is for navigations */
 nav{
     grid-area: nav;
     width: 100%;
@@ -121,6 +124,7 @@ nav ul li{
     display: inline-block;
     list-style: none;
 }
+
 
 .active{
     font-weight: bold;
@@ -151,4 +155,9 @@ footer{
     border: 3px solid rgb(11, 245, 186);
     background-color: black;
     padding: 5px;
+}
+
+/* to give hover effect on header */
+a:hover{
+	color:blue;
 }

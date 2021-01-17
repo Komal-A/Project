@@ -168,3 +168,7 @@ form {
     padding: 0.5em;
     margin-top: 5px;
 }
+
+a:hover{
+	color:blue;
+}

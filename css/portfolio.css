@@ -185,3 +185,6 @@ nav ul li a:hover{
   text-align: justify;
   text-justify: inter-word;
 }
+a:hover{
+	color:blue;
+}
