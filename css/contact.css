@@ -1,3 +1,4 @@
+/* used this code for body layout */
 body{
     font-family: 'Source Sans Pro', sans-serif;
     background-image: url("../images/4K-Tech-HD-Background.jpg");
@@ -17,6 +18,7 @@ body{
     text-align: center;
 }
 
+/* this styling code is for navigations */
 nav{
     grid-area: nav;
     width: 100%;
@@ -56,12 +58,12 @@ h2, p{
     padding: 0em;
     margin: 0em;
 }
-
+/* to make image responsive so it can be adjust by itself according to resolution */
 .responsive {
     width: 100%;
     height: auto;
 }
-
+/* assigned class to apply properties on navigation only the page which is active  */
 .active{
     font-weight: bold;
     padding: 5px 15px;
@@ -131,14 +133,14 @@ main h3{
     font-weight: normal;
 }
 
-#myinput{
+#myinput, #myinput1, #textarea{
     background-color: lightgray;
     color: rgb(56, 41, 75);
     font-weight: bold;
     font-style: italic;
     
 }
-
+/* to give style on footer */
 footer{
     grid-area: footer;
     text-align: center;
@@ -169,6 +171,7 @@ form {
     margin-top: 5px;
 }
 
+/* to give hover effect on header */
 a:hover{
 	color:blue;
 }

@@ -1,3 +1,4 @@
+/* used this code for body layout */
 body{
     font-family: 'Source Sans Pro', sans-serif;
     background-image: url("../images/4K-Tech-HD-Background.jpg");
@@ -15,6 +16,7 @@ body{
                           "footer footer footer footer";
 }
 
+/* to make image responsive so it can be adjust by itself according to resolution */
 .responsive {
     width: 95%;
     height: auto;
@@ -33,6 +35,7 @@ body{
     padding-bottom: 40px;
 }
 
+/* used animation on heading assigned class name page-heading */
 .page-heading {
     color: black;
     width: 150px;
@@ -134,6 +137,7 @@ main{
     margin-right: 5px;
 }
 
+/* this styling code is for navigations */
 nav{
     grid-area: nav;
     width: 100%;
@@ -169,6 +173,7 @@ nav ul li a:hover{
     border-radius: 10px;
 }
 
+/* assigned class to apply properties on navigation only the page which is active  */
 .active{
     font-weight: bold;
     padding: 5px 15px;
@@ -220,6 +225,7 @@ header h1 a{
     display: inline-block;
 }
 
+/* to give style on footer */
 footer{
     grid-area: footer;
     text-align: center;
@@ -230,6 +236,7 @@ footer{
     padding: 5px;
 }
 
+/* to give hover effect on header */
 a:hover{
 	color:blue;
 }

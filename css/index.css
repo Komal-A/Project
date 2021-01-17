@@ -19,6 +19,7 @@ body{
     display: none;
 }
 
+/* to make image responsive so it can be adjust by itself according to resolution */
 .responsive {
   width: 100%;
   height: auto;
@@ -125,7 +126,7 @@ nav ul li{
     list-style: none;
 }
 
-
+/* assigned class to apply properties on navigation only the page which is active  */
 .active{
     font-weight: bold;
     padding: 5px 15px;
@@ -146,7 +147,7 @@ nav ul li{
     list-style: none;
     color: white;
 }
-
+/* to give style on footer */
 footer{
     grid-area: footer;
     text-align: center;
